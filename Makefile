@@ -1,7 +1,11 @@
 # Set phony targets
-.PHONY: all
+.PHONY: initialize test
 
 # Initialize pre-commit
-all:
+initialize:
 	pre-commit install
 	pre-commit run --all-files
+
+# Test formatter on example.py
+test:
+	black 01-code-scripts/example.py
