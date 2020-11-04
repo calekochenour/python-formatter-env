@@ -36,6 +36,3 @@ install:
 
 test_script:
   - conda list
-  - conda list black
-  - conda list nb_black
-  - conda list pre-commit
