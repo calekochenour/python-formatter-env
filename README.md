@@ -9,9 +9,9 @@ This repository contains a Conda environment to format Python scripts and Jupyte
 There are two example files (one Jupyter Notebook, one Python script) available to demonstrate the effects of the formatters used in this environment. The structure from the repository root is as follows:
 
 ```
-├── 01-code-scripts
-│   ├── example.ipynb
-│   └── example.py
+└── 01-code-scripts
+    ├── example.ipynb
+    └── example.py
 ```
 
 ### Python Script
@@ -20,7 +20,7 @@ There are two ways to run the formatter on the `example.py` script. For both met
 
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/calekochenour/python-formatter-env/main)
 
-Open the `example.py` script and observe the contents. The `example_function()` was created to have line lengths that exceeded the maximum of 79, as defined in the `pyproject.toml` file. Within Binder, click on `New` and select `Terminal`. This is where you have a choice to format the script. Within the terminal, run either of the following commands:
+Open the `example.py` script and observe the contents. The `example_function()` was created with line lengths that exceeded the maximum of 79, as defined in the `pyproject.toml` file. Within Binder, click on `New` and select `Terminal`. This is where you have a choice to format the script. Within the terminal, run either of the following commands:
 
 ```bash
 make initialize
@@ -29,10 +29,10 @@ make initialize
 or
 
 ```bash
-make test
+make format
 ```
 
-The first choice will set up `black` and `flake8` pre-commit hooks and then run the hooks on the script. This option takes longer. The second option runs `black` on the script without the addition of pre-commit. Either choice runs the formatter. You can then refresh the page containing the `example.py` script to observe the changes.
+The first choice will set up `black` and `flake8` pre-commit hooks and then run the hooks on the script. This option takes longer. The second option runs `black` on the script without the addition of pre-commit hooks. Either choice runs the formatter. You can then refresh the page containing the `example.py` script to observe the changes.
 
 Refer to the `Makefile` for information about the recipes, and refer to the `.pre-commit-config.yaml` and `pyproject.toml` files for formatter configurations.
 
@@ -52,7 +52,7 @@ To adjust the maximum line length, first locate the `lab_black.py` file within t
 
 * `~\miniconda3\envs\python-formatter\Lib\site-packages\lab_black.py`
 
-The initial part of the path (`~\miniconda3`) may differ, depending on the local Conda installation. The name of the environment (`\python-formatter`) may also differ if you changed the name within the `environment.yml` file.
+The initial part of the path (`~\miniconda3`) may differ, depending on the local Conda installation. The name of the environment (`python-formatter`) may also differ if you changed the name within the `environment.yml` file.
 
 Within the `lab_black.py` file (starting at or around line 25), replace
 
@@ -81,7 +81,7 @@ This changes the `line_length` parameter to 79. You can also change and/or add t
 
 ### `01-code-scripts/`
 
-Contains all example Python and Jupyter Notebook files.
+Contains all example Python scripts and Jupyter Notebook files.
 
 ### `environment.yml`
 
