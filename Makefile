@@ -4,4 +4,4 @@
 # Initialize pre-commit
 all:
 	pre-commit install
-    pre-commit run --all-files
+	pre-commit run --all-files
