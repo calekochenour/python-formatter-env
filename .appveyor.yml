@@ -36,5 +36,3 @@ install:
 
 test_script:
   - conda list
-  - choco install make 
-  - make all
