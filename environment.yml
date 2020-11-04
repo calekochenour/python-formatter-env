@@ -1,0 +1,21 @@
+name: python-formatter
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Main Python
+  - python=3.8
+
+  # Formatter-specific
+  - black
+  - nb_black
+  - autopep8
+  - pre-commit
+
+  # Jupyter environment
+  - jupyterlab
+  - notebook
+  - jupyter_contrib_nbextensions
+  - nbclean
