@@ -15,4 +15,6 @@ script:
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda activate python-formatter
   - conda list
-  - make all
+  - conda list black
+  - conda list nb_black
+  - conda list pre-commit
