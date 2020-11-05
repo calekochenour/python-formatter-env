@@ -1,5 +1,6 @@
 [![Travis CI Build Status](https://travis-ci.com/calekochenour/python-formatter-env.svg?branch=main)](https://travis-ci.com/calekochenour/python-formatter-env)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)](https://ci.appveyor.com/project/calekochenour/python-formatter-env)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4245337.svg)](https://doi.org/10.5281/zenodo.4245337)
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/calekochenour/python-formatter-env/main)
 [![BSD 3-Clause License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
